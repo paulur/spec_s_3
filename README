@@ -1,4 +1,4 @@
-The maven version of static code analyzer for security vulnerabilities.
+static security scanner to discover vulnerabilities in the source code.
 
 I. Test this Plugin
 The best way to test if this plugin is correctly installed in Findbugs is to scan Webgoat (http://superb-dca3.dl.sourceforge.net/project/owasp/WebGoat/WebGoat%205.2/WebGoat-5.2.war)
