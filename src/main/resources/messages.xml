@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><MessageCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="messagecollection.xsd"><Plugin><ShortDescription>Spec SCA Security Detector.</ShortDescription><Details>Provides detectors to detect security bugs.</Details></Plugin><Detector class="com.spec.msca.crypto.CipherInstanceVerifier"><Details>Verify the correct crypt ciphers are used and correct mode of the cipher is used.</Details></Detector><Detector class="com.spec.msca.crypto.HashInstanceVerifier"><Details>Verify the correct Hash algorithms are used.</Details></Detector><Detector class="com.spec.msca.crypto.SecureRandomInstanceVerifier"><Details>Secure Random Instance.</Details></Detector><BugPattern type="NON_STANDARD_CIPHER_INSTANCE"><ShortDescription>Non-standard Cipher Instance</ShortDescription><LongDescription>Non-standard Cipher or Cipher Mode in {1}</LongDescription><Details>
+			
+			&lt;p&gt;
+			Among symmetric cihpers, AES and triple-DES are only two NIST certificated ciphers. 
+			Both ciphers can use either secured block cipher mode such as CBC or stream cipher mode such as CTR mode.
+			Both ciphers should not use ECB mode, which is a block cipher mode but not secure.
+			Both secured block cipher mode or stream cipher mode need an IV, which should be secure random value.
+			CBC mode is more recommended because this mode has the relatively easy requirements for generating IV.
+			Block cipher modes (e.g., CBC) needs padding;  stream cipher modes (e.g., CTR) do not need padding in {1}
+			&lt;/p&gt;
+			
+		</Details></BugPattern><BugCode abbrev="NSCI">Non-standard Cipher Instance</BugCode><BugPattern type="WARNING_CIPHER_DISCOVERED"><ShortDescription>Cipher Discovered</ShortDescription><LongDescription>Warning cipher algorithm in {1}</LongDescription><Details>
+			
+				&lt;p&gt;
+				Correct Hash algorithm; needs look into details such as salt.
+				&lt;/p&gt; 
+			
+		</Details></BugPattern><BugCode abbrev="WCD">Cipher Algorithm Discovered</BugCode><BugPattern type="WARNING_HASH_DISCOVERED"><ShortDescription>Hash Discovered</ShortDescription><LongDescription>Warning Hash discovered in {1}</LongDescription><Details>
+			
+				&lt;p&gt;
+				Correct Hash algorithm, but need look into details such as salt.
+				&lt;/p&gt; 
+			
+		</Details></BugPattern><BugCode abbrev="WHD">Hash Discovered</BugCode><BugPattern type="ASYMMETRIC_CIPHER_IN_APP"><ShortDescription>Asymmetric Cipher in Application</ShortDescription><LongDescription>Asymmetric Cipher Used in {1}</LongDescription><Details>
+			
+			&lt;p&gt;
+			Asymmetric cihpers are not recommended directly used in applications 
+			because of the performance issues and the inherited weakness (e.g., low security of encrypting short messages).
+			Asymmetric ciphers are usually used for encrypting a session key of an application, 
+			and the application uses the session key in a symmetric cipher to encrypt the data of the applciation.
+			&lt;/p&gt; 
+			
+		</Details></BugPattern><BugCode abbrev="ACIA">Asymmetric Cipher in Application</BugCode><BugPattern type="OUTDATED_HASH_INTANCE"><ShortDescription>Outdated Hash Algorithm</ShortDescription><LongDescription>Outdated hash algorithm discovered in {1}</LongDescription><Details>
+			
+				&lt;p&gt;
+				SHA-1, SHA-2, or SHA-3 are the correct algorithms. Others are outdated.
+				&lt;/p&gt; 
+			
+		</Details></BugPattern><BugCode abbrev="OHI">Outdated Hash Algorithm</BugCode><BugPattern type="SECURE_RANDOM_INSTANCE"><ShortDescription>Secure randome instance cause potential performance issue</ShortDescription><LongDescription>Secure randome instance cause potential performance issuein {1}</LongDescription><Details>
+			
+				&lt;p&gt;
+				SecureRandom.getInstance() invoke the PRNG generator under /var/dev/. 
+				Implementations in some Linux kernels are very slow. Use SecureRandom().getNextBytes() instead.
+				&lt;/p&gt; 
+			
+		</Details></BugPattern><BugCode abbrev="SRI">Secure Randome Instance</BugCode></MessageCollection>

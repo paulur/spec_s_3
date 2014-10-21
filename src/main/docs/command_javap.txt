@@ -1,0 +1,5 @@
+
+C:\svn-local\R_D\dev\sca_test_class\bin>javap -c -verbose -s -private -l com\spec\sca\test\EncryptVerifierTest > javapCompiledEVTClass.txt
+
+
+C:\svn-local\R_D\dev\sca\spec_sca\bin>javap -c -verbose -s -private -l com\spec\sca\crypto\CipherAndModeVerifier > camv.tx

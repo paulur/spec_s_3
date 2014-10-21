@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.1" sequence="0" timestamp="1374077550214" analysisTimestamp="1374077612839" release="">
+  <Project projectName="sca-benchmark">
+    <Jar>C:\svn-local\R_D\dev\spec-crypto-testcase.jar</Jar>
+    <AuxClasspathEntry>C:\lib\commons-codec-1.7\commons-codec-1.7.jar</AuxClasspathEntry>
+    <SrcDir>C:\svn-local\R_D\dev\sca_test_class\src</SrcDir>
+  </Project>
+  <BugInstance type="ASYMMETRIC_CIPHER_IN_APP" priority="2" abbrev="ACIA" category="SECURITY">
+    <Class classname="com.spec.sca.benchmark.EncryptVerifierBenchmark">
+      <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+    </Class>
+    <Method classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" name="doEncryption" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" start="31" end="75" startBytecode="0" endBytecode="86" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+    </Method>
+    <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" start="62" end="62" startBytecode="75" endBytecode="75" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N">
+    <Class classname="com.spec.sca.benchmark.EncryptVerifierBenchmark">
+      <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+    </Class>
+    <Method classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" name="doEncryption" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" start="31" end="75" startBytecode="0" endBytecode="412" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="593" end="594" startBytecode="0" endBytecode="36" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" start="68" end="68" startBytecode="107" endBytecode="107" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N">
+    <Class classname="com.spec.sca.benchmark.EncryptVerifierBenchmark">
+      <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+    </Class>
+    <Method classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" name="doEncryption" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" start="31" end="75" startBytecode="0" endBytecode="412" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="593" end="594" startBytecode="0" endBytecode="36" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" start="72" end="72" startBytecode="140" endBytecode="140" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N">
+    <Class classname="com.spec.sca.benchmark.EncryptVerifierBenchmark">
+      <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+    </Class>
+    <Method classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" name="doEncryption" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" start="31" end="75" startBytecode="0" endBytecode="412" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="986" end="986" startBytecode="0" endBytecode="39" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" start="31" end="31" startBytecode="1" endBytecode="1" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N">
+    <Class classname="com.spec.sca.benchmark.EncryptVerifierBenchmark">
+      <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+    </Class>
+    <Method classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" name="doEncryption" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" start="31" end="75" startBytecode="0" endBytecode="412" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="986" end="986" startBytecode="0" endBytecode="39" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" start="32" end="32" startBytecode="9" endBytecode="9" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N">
+    <Class classname="com.spec.sca.benchmark.EncryptVerifierBenchmark">
+      <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+    </Class>
+    <Method classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" name="doEncryption" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" start="31" end="75" startBytecode="0" endBytecode="412" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="986" end="986" startBytecode="0" endBytecode="39" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" start="33" end="33" startBytecode="17" endBytecode="17" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+  </BugInstance>
+  <BugInstance type="NON_STANDARD_CIPHER_INSTANCE" priority="1" abbrev="NSCI" category="SECURITY">
+    <Class classname="com.spec.sca.benchmark.EncryptVerifierBenchmark">
+      <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+    </Class>
+    <Method classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" name="doEncryption" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" start="31" end="75" startBytecode="0" endBytecode="86" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+    </Method>
+    <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" start="59" end="59" startBytecode="54" endBytecode="54" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java"/>
+    <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" start="60" end="60" startBytecode="61" endBytecode="61" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="com.spec.sca.benchmark.EncryptVerifierBenchmark" start="61" end="61" startBytecode="68" endBytecode="68" sourcefile="EncryptVerifierBenchmark.java" sourcepath="com/spec/sca/benchmark/EncryptVerifierBenchmark.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 17 Jul 2013 11:12:30 -0500" total_classes="2" referenced_classes="25" total_bugs="7" total_size="39" num_packages="1" vm_version="20.12-b01" cpu_seconds="1.41" clock_seconds="42.81" peak_mbytes="172.26" alloc_mbytes="742.44" gc_seconds="0.06" priority_2="1" priority_1="6">
+    <PackageStats package="com.spec.sca.benchmark" total_bugs="7" total_types="2" total_size="39" priority_2="1" priority_1="6">
+      <ClassStats class="com.spec.sca.benchmark.EncryptVerifierBenchmark" sourceFile="EncryptVerifierBenchmark.java" interface="false" size="31" bugs="7" priority_2="1" priority_1="6"/>
+      <ClassStats class="com.spec.sca.benchmark.Util" sourceFile="Util.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="131" invocations="354" avgMicrosecondsPerInvocation="371" maxMicrosecondsPerInvocation="20027" standardDeviationMircosecondsPerInvocation="1187"/>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="114" invocations="2" avgMicrosecondsPerInvocation="57342" maxMicrosecondsPerInvocation="102560" standardDeviationMircosecondsPerInvocation="45218"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="42" invocations="14" avgMicrosecondsPerInvocation="3051" maxMicrosecondsPerInvocation="26435" standardDeviationMircosecondsPerInvocation="6513"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="22" invocations="25" avgMicrosecondsPerInvocation="894" maxMicrosecondsPerInvocation="4691" standardDeviationMircosecondsPerInvocation="1335"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="18" invocations="25" avgMicrosecondsPerInvocation="759" maxMicrosecondsPerInvocation="3890" standardDeviationMircosecondsPerInvocation="1147"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="17" invocations="338" avgMicrosecondsPerInvocation="51" maxMicrosecondsPerInvocation="584" standardDeviationMircosecondsPerInvocation="85"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

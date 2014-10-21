@@ -1,0 +1,27 @@
+t's not particularly easy, you can do it using the OpcodeStack class.
+
+Basically anytime you see a LDC instruction, you need to keep track of where that constant lives. so for instance
+
+
+Byte[] b1 = s.getBytes();
+
+is going to have
+
+LDC
+INVOKE_VIRTUAL
+ASTORE
+
+you you use stash the fact that the value is a constant in the OpcodeStack.Item userValue field.
+
+so LDC, puts a value on the stack, after the op executes, you can mark do something like stack.getStackitem(0).setUserValue("CONSTANT");
+
+when INVOKE_VIRTUAL is called, you look at stack.getStackItem(0) and set if getUserValue() is "CONSTANT", if it is, you need to look at the method to see if it returns something, and if it does, stuff the "CONSTANT" in that stack item, after the INVOKE_VIRTUAL executes.
+
+As for the ASTORE/ALOAD findbugs itself will save/restore the user value so you don't need to
+
+So basically you need to track that user value as it goes thru the code base.
+
+Then when the method call occurs, you look in the opcode stack, see if the the item in question has a userValue of "CONSTANT"
+
+
+-- note the use of "CONSTANT" was just for illustrative purposes, you can store whatever you like in that userValue, including the actual constant value if you like.

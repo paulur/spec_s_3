@@ -1,0 +1,15 @@
+The maven version of static code analyzer for security vulnerabilities.
+
+I. Test this Plugin
+The best way to test if this plugin is correctly installed in Findbugs is to scan Webgoat (http://superb-dca3.dl.sourceforge.net/project/owasp/WebGoat/WebGoat%205.2/WebGoat-5.2.war)
+After the scan, check the output: Under security, there should be two Non-standard Cipher Instance bugs
+
+II. Add New Detectors
+1. Create a new class that extends com.spec.sca.BaseDetector:
+-Detectors are implemented as template pattern
+-BaseDetctor is the base class for any concrete Detector to extends
+-Implement all abstract getters and setters 
+-Implement verifyTarget() that is the method of detector to detect bugs
+-Use accumulateBug(bug, methodGen, javaClass, location) to add a detected bug in verifyTarget() method 
+2. Add a new "class" node in class-bugs.xml file
+3. Run com.spec.sca.util.ConfigConverter

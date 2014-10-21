@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-bugs>
+<class name="com.spec.msca.crypto.CipherInstanceVerifier">
+	<details>Verify the correct crypt ciphers are used and correct mode of the cipher is used.</details>
+	<bug type="NON_STANDARD_CIPHER_INSTANCE">
+		<abbrev>NSCI</abbrev>
+		<category>SECURITY</category>
+		<ShortDescription>Non-standard Cipher Instance</ShortDescription>
+		<LongDescription>Non-standard Cipher or Cipher Mode in {1}</LongDescription>
+		<Details>
+			<![CDATA[
+			<p>
+			Among symmetric cihpers, AES and triple-DES are only two NIST certificated ciphers. 
+			Both ciphers can use either secured block cipher mode such as CBC or stream cipher mode such as CTR mode.
+			Both ciphers should not use ECB mode, which is a block cipher mode but not secure.
+			Both secured block cipher mode or stream cipher mode need an IV, which should be secure random value.
+			CBC mode is more recommended because this mode has the relatively easy requirements for generating IV.
+			Block cipher modes (e.g., CBC) needs padding;  stream cipher modes (e.g., CTR) do not need padding in {1}
+			</p>
+			]]>
+		</Details>
+		<BugCode>Non-standard Cipher Instance</BugCode>
+	</bug>
+	<bug type="ASYMMETRIC_CIPHER_IN_APP">
+		<abbrev>ACIA</abbrev>
+		<category>SECURITY</category>
+		<ShortDescription>Asymmetric Cipher in Application</ShortDescription>
+		<LongDescription>Asymmetric Cipher Used in {1}</LongDescription>
+		<Details>
+			<![CDATA[
+			<p>
+			Asymmetric cihpers are not recommended directly used in applications 
+			because of the performance issues and the inherited weakness (e.g., low security of encrypting short messages).
+			Asymmetric ciphers are usually used for encrypting a session key of an application, 
+			and the application uses the session key in a symmetric cipher to encrypt the data of the applciation.
+			</p> 
+			]]>
+		</Details>
+		<BugCode>Asymmetric Cipher in Application</BugCode>
+	</bug>
+	<bug type="WARNING_CIPHER_DISCOVERED">
+		<abbrev>WCD</abbrev>
+		<category>SECURITY</category>
+		<ShortDescription>Cipher Discovered</ShortDescription>
+		<LongDescription>Warning cipher algorithm in {1}</LongDescription>
+		<Details>
+			<![CDATA[
+				<p>
+				Correct Hash algorithm; needs look into details such as salt.
+				</p> 
+			]]>
+		</Details>
+		<BugCode>Cipher Algorithm Discovered</BugCode>
+	</bug>
+</class>
+
+<class name="com.spec.msca.crypto.HashInstanceVerifier">
+	<details>Verify the correct Hash algorithms are used.</details>
+	<bug type="OUTDATED_HASH_INTANCE">
+		<abbrev>OHI</abbrev>
+		<category>SECURITY</category>
+		<ShortDescription>Outdated Hash Algorithm</ShortDescription>
+		<LongDescription>Outdated hash algorithm discovered in {1}</LongDescription>
+		<Details>
+			<![CDATA[
+				<p>
+				SHA-1, SHA-2, or SHA-3 are the correct algorithms. Others are outdated.
+				</p> 
+			]]>
+		</Details>
+		<BugCode>Outdated Hash Algorithm</BugCode>
+	</bug>
+
+	<bug type="WARNING_HASH_DISCOVERED">
+		<abbrev>WHD</abbrev>
+		<category>SECURITY</category>
+		<ShortDescription>Hash Discovered</ShortDescription>
+		<LongDescription>Warning Hash discovered in {1}</LongDescription>
+		<Details>
+			<![CDATA[
+				<p>
+				Correct Hash algorithm, but need look into details such as salt.
+				</p> 
+			]]>
+		</Details>
+		<BugCode>Hash Discovered</BugCode>
+	</bug>
+</class>
+
+
+<class name="com.spec.msca.crypto.SecureRandomInstanceVerifier">
+	<details>Secure Random Instance.</details>
+	<bug type="SECURE_RANDOM_INSTANCE">
+		<abbrev>SRI</abbrev>
+		<category>SECURITY</category>
+		<ShortDescription>Secure randome instance cause potential performance issue</ShortDescription>
+		<LongDescription>Secure randome instance cause potential performance issuein {1}</LongDescription>
+		<Details>
+			<![CDATA[
+				<p>
+				SecureRandom.getInstance() invoke the PRNG generator under /var/dev/. 
+				Implementations in some Linux kernels are very slow. Use SecureRandom().getNextBytes() instead.
+				</p> 
+			]]>
+		</Details>
+		<BugCode>Secure Randome Instance</BugCode>
+	</bug>
+</class>
+
+</class-bugs>

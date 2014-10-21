@@ -1,0 +1,380 @@
+Compiled from "EncryptVerifierBenchmark.java"
+public class com.spec.sca.benchmark.EncryptVerifierBenchmark extends java.lang.Object
+  SourceFile: "EncryptVerifierBenchmark.java"
+  minor version: 0
+  major version: 50
+  Constant pool:
+const #1 = class	#2;	//  com/spec/sca/benchmark/EncryptVerifierBenchmark
+const #2 = Asciz	com/spec/sca/benchmark/EncryptVerifierBenchmark;
+const #3 = class	#4;	//  java/lang/Object
+const #4 = Asciz	java/lang/Object;
+const #5 = Asciz	key;
+const #6 = Asciz	Ljava/lang/String;;
+const #7 = Asciz	iv;
+const #8 = Asciz	<init>;
+const #9 = Asciz	()V;
+const #10 = Asciz	Code;
+const #11 = Method	#3.#12;	//  java/lang/Object."<init>":()V
+const #12 = NameAndType	#8:#9;//  "<init>":()V
+const #13 = Field	#14.#16;	//  com/spec/sca/benchmark/Util.key:Ljava/lang/String;
+const #14 = class	#15;	//  com/spec/sca/benchmark/Util
+const #15 = Asciz	com/spec/sca/benchmark/Util;
+const #16 = NameAndType	#5:#6;//  key:Ljava/lang/String;
+const #17 = Field	#1.#16;	//  com/spec/sca/benchmark/EncryptVerifierBenchmark.key:Ljava/lang/String;
+const #18 = Field	#14.#19;	//  com/spec/sca/benchmark/Util.iv:Ljava/lang/String;
+const #19 = NameAndType	#7:#6;//  iv:Ljava/lang/String;
+const #20 = Field	#1.#19;	//  com/spec/sca/benchmark/EncryptVerifierBenchmark.iv:Ljava/lang/String;
+const #21 = Asciz	LineNumberTable;
+const #22 = Asciz	LocalVariableTable;
+const #23 = Asciz	this;
+const #24 = Asciz	Lcom/spec/sca/benchmark/EncryptVerifierBenchmark;;
+const #25 = Asciz	main;
+const #26 = Asciz	([Ljava/lang/String;)V;
+const #27 = Asciz	Exceptions;
+const #28 = class	#29;	//  java/security/InvalidKeyException
+const #29 = Asciz	java/security/InvalidKeyException;
+const #30 = class	#31;	//  java/security/NoSuchAlgorithmException
+const #31 = Asciz	java/security/NoSuchAlgorithmException;
+const #32 = class	#33;	//  javax/crypto/NoSuchPaddingException
+const #33 = Asciz	javax/crypto/NoSuchPaddingException;
+const #34 = class	#35;	//  java/security/InvalidAlgorithmParameterException
+const #35 = Asciz	java/security/InvalidAlgorithmParameterException;
+const #36 = class	#37;	//  javax/crypto/IllegalBlockSizeException
+const #37 = Asciz	javax/crypto/IllegalBlockSizeException;
+const #38 = class	#39;	//  javax/crypto/BadPaddingException
+const #39 = Asciz	javax/crypto/BadPaddingException;
+const #40 = Method	#1.#12;	//  com/spec/sca/benchmark/EncryptVerifierBenchmark."<init>":()V
+const #41 = String	#42;	//  abc
+const #42 = Asciz	abc;
+const #43 = Method	#1.#44;	//  com/spec/sca/benchmark/EncryptVerifierBenchmark.doEncryption:(Ljava/lang/String;)V
+const #44 = NameAndType	#45:#46;//  doEncryption:(Ljava/lang/String;)V
+const #45 = Asciz	doEncryption;
+const #46 = Asciz	(Ljava/lang/String;)V;
+const #47 = String	#48;	//  abd
+const #48 = Asciz	abd;
+const #49 = Asciz	args;
+const #50 = Asciz	[Ljava/lang/String;;
+const #51 = Asciz	cvt;
+const #52 = Method	#53.#55;	//  java/lang/String.getBytes:()[B
+const #53 = class	#54;	//  java/lang/String
+const #54 = Asciz	java/lang/String;
+const #55 = NameAndType	#56:#57;//  getBytes:()[B
+const #56 = Asciz	getBytes;
+const #57 = Asciz	()[B;
+const #58 = class	#59;	//  javax/crypto/spec/SecretKeySpec
+const #59 = Asciz	javax/crypto/spec/SecretKeySpec;
+const #60 = String	#61;	//  AES
+const #61 = Asciz	AES;
+const #62 = Method	#58.#63;	//  javax/crypto/spec/SecretKeySpec."<init>":([BLjava/lang/String;)V
+const #63 = NameAndType	#8:#64;//  "<init>":([BLjava/lang/String;)V
+const #64 = Asciz	([BLjava/lang/String;)V;
+const #65 = class	#66;	//  javax/crypto/spec/IvParameterSpec
+const #66 = Asciz	javax/crypto/spec/IvParameterSpec;
+const #67 = Method	#65.#68;	//  javax/crypto/spec/IvParameterSpec."<init>":([B)V
+const #68 = NameAndType	#8:#69;//  "<init>":([B)V
+const #69 = Asciz	([B)V;
+const #70 = String	#71;	//  AES/CBC/PKCS5Padding
+const #71 = Asciz	AES/CBC/PKCS5Padding;
+const #72 = Method	#73.#75;	//  javax/crypto/Cipher.getInstance:(Ljava/lang/String;)Ljavax/crypto/Cipher;
+const #73 = class	#74;	//  javax/crypto/Cipher
+const #74 = Asciz	javax/crypto/Cipher;
+const #75 = NameAndType	#76:#77;//  getInstance:(Ljava/lang/String;)Ljavax/crypto/Cipher;
+const #76 = Asciz	getInstance;
+const #77 = Asciz	(Ljava/lang/String;)Ljavax/crypto/Cipher;;
+const #78 = Method	#73.#79;	//  javax/crypto/Cipher.init:(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
+const #79 = NameAndType	#80:#81;//  init:(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
+const #80 = Asciz	init;
+const #81 = Asciz	(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V;
+const #82 = Method	#73.#83;	//  javax/crypto/Cipher.doFinal:([B)[B
+const #83 = NameAndType	#84:#85;//  doFinal:([B)[B
+const #84 = Asciz	doFinal;
+const #85 = Asciz	([B)[B;
+const #86 = Method	#87.#89;	//  org/apache/commons/codec/binary/Base64.encodeBase64:([B)[B
+const #87 = class	#88;	//  org/apache/commons/codec/binary/Base64
+const #88 = Asciz	org/apache/commons/codec/binary/Base64;
+const #89 = NameAndType	#90:#85;//  encodeBase64:([B)[B
+const #90 = Asciz	encodeBase64;
+const #91 = Method	#53.#68;	//  java/lang/String."<init>":([B)V
+const #92 = Method	#87.#93;	//  org/apache/commons/codec/binary/Base64.decodeBase64:(Ljava/lang/String;)[B
+const #93 = NameAndType	#94:#95;//  decodeBase64:(Ljava/lang/String;)[B
+const #94 = Asciz	decodeBase64;
+const #95 = Asciz	(Ljava/lang/String;)[B;
+const #96 = Field	#97.#99;	//  java/lang/System.out:Ljava/io/PrintStream;
+const #97 = class	#98;	//  java/lang/System
+const #98 = Asciz	java/lang/System;
+const #99 = NameAndType	#100:#101;//  out:Ljava/io/PrintStream;
+const #100 = Asciz	out;
+const #101 = Asciz	Ljava/io/PrintStream;;
+const #102 = class	#103;	//  java/lang/StringBuilder
+const #103 = Asciz	java/lang/StringBuilder;
+const #104 = String	#105;	//  cleartext:[
+const #105 = Asciz	cleartext:[;
+const #106 = Method	#102.#107;	//  java/lang/StringBuilder."<init>":(Ljava/lang/String;)V
+const #107 = NameAndType	#8:#46;//  "<init>":(Ljava/lang/String;)V
+const #108 = Method	#102.#109;	//  java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+const #109 = NameAndType	#110:#111;//  append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+const #110 = Asciz	append;
+const #111 = Asciz	(Ljava/lang/String;)Ljava/lang/StringBuilder;;
+const #112 = String	#113;	//  ]\tcihperString: [
+const #113 = Asciz	]\tcihperString: [;
+const #114 = String	#115;	//  ]\tdecryptedString: [
+const #115 = Asciz	]\tdecryptedString: [;
+const #116 = String	#117;	//  ]
+const #117 = Asciz	];
+const #118 = Method	#102.#119;	//  java/lang/StringBuilder.toString:()Ljava/lang/String;
+const #119 = NameAndType	#120:#121;//  toString:()Ljava/lang/String;
+const #120 = Asciz	toString;
+const #121 = Asciz	()Ljava/lang/String;;
+const #122 = Method	#123.#125;	//  java/io/PrintStream.println:(Ljava/lang/String;)V
+const #123 = class	#124;	//  java/io/PrintStream
+const #124 = Asciz	java/io/PrintStream;
+const #125 = NameAndType	#126:#46;//  println:(Ljava/lang/String;)V
+const #126 = Asciz	println;
+const #127 = Asciz	input;
+const #128 = Asciz	inputBytes;
+const #129 = Asciz	[B;
+const #130 = Asciz	keyBytes;
+const #131 = Asciz	ivBytes;
+const #132 = Asciz	keySpec;
+const #133 = Asciz	Ljavax/crypto/spec/SecretKeySpec;;
+const #134 = Asciz	ivSpec;
+const #135 = Asciz	Ljavax/crypto/spec/IvParameterSpec;;
+const #136 = Asciz	cipher;
+const #137 = Asciz	Ljavax/crypto/Cipher;;
+const #138 = Asciz	chiperTextByte;
+const #139 = Asciz	cihperString;
+const #140 = Asciz	decryptedTextByte;
+const #141 = Asciz	decyptedString;
+const #142 = Asciz	SourceFile;
+const #143 = Asciz	EncryptVerifierBenchmark.java;
+
+{
+java.lang.String key;
+  Signature: Ljava/lang/String;
+
+
+java.lang.String iv;
+  Signature: Ljava/lang/String;
+
+
+public com.spec.sca.benchmark.EncryptVerifierBenchmark();
+  Signature: ()V
+  LineNumberTable: 
+   line 16: 0
+   line 17: 4
+   line 19: 11
+   line 16: 18
+
+  LocalVariableTable: 
+   Start  Length  Slot  Name   Signature
+   0      19      0    this       Lcom/spec/sca/benchmark/EncryptVerifierBenchmark;
+
+
+  Code:
+   Stack=2, Locals=1, Args_size=1
+   0:	aload_0
+   1:	invokespecial	#11; //Method java/lang/Object."<init>":()V
+   4:	aload_0
+   5:	getstatic	#13; //Field com/spec/sca/benchmark/Util.key:Ljava/lang/String;
+   8:	putfield	#17; //Field key:Ljava/lang/String;
+   11:	aload_0
+   12:	getstatic	#18; //Field com/spec/sca/benchmark/Util.iv:Ljava/lang/String;
+   15:	putfield	#20; //Field iv:Ljava/lang/String;
+   18:	return
+  LineNumberTable: 
+   line 16: 0
+   line 17: 4
+   line 19: 11
+   line 16: 18
+
+  LocalVariableTable: 
+   Start  Length  Slot  Name   Signature
+   0      19      0    this       Lcom/spec/sca/benchmark/EncryptVerifierBenchmark;
+
+
+public static void main(java.lang.String[])   throws java.security.InvalidKeyException, java.security.NoSuchAlgorithmException, javax.crypto.NoSuchPaddingException, java.security.InvalidAlgorithmParameterException, javax.crypto.IllegalBlockSizeException, javax.crypto.BadPaddingException;
+  Signature: ([Ljava/lang/String;)V
+  LineNumberTable: 
+   line 23: 0
+   line 24: 8
+   line 25: 14
+   line 26: 20
+
+  LocalVariableTable: 
+   Start  Length  Slot  Name   Signature
+   0      21      0    args       [Ljava/lang/String;
+   8      13      1    cvt       Lcom/spec/sca/benchmark/EncryptVerifierBenchmark;
+
+
+  Exceptions: 
+   throws java.security.InvalidKeyException, java.security.NoSuchAlgorithmException, javax.crypto.NoSuchPaddingException, java.security.InvalidAlgorithmParameterException, javax.crypto.IllegalBlockSizeException, javax.crypto.BadPaddingException  Code:
+   Stack=2, Locals=2, Args_size=1
+   0:	new	#1; //class com/spec/sca/benchmark/EncryptVerifierBenchmark
+   3:	dup
+   4:	invokespecial	#40; //Method "<init>":()V
+   7:	astore_1
+   8:	aload_1
+   9:	ldc	#41; //String abc
+   11:	invokevirtual	#43; //Method doEncryption:(Ljava/lang/String;)V
+   14:	aload_1
+   15:	ldc	#47; //String abd
+   17:	invokevirtual	#43; //Method doEncryption:(Ljava/lang/String;)V
+   20:	return
+  LineNumberTable: 
+   line 23: 0
+   line 24: 8
+   line 25: 14
+   line 26: 20
+
+  LocalVariableTable: 
+   Start  Length  Slot  Name   Signature
+   0      21      0    args       [Ljava/lang/String;
+   8      13      1    cvt       Lcom/spec/sca/benchmark/EncryptVerifierBenchmark;
+
+
+public void doEncryption(java.lang.String)   throws java.security.NoSuchAlgorithmException, javax.crypto.NoSuchPaddingException, java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException, javax.crypto.IllegalBlockSizeException, javax.crypto.BadPaddingException;
+  Signature: (Ljava/lang/String;)V
+  LineNumberTable: 
+   line 33: 0
+   line 34: 5
+   line 35: 13
+   line 39: 22
+   line 40: 34
+   line 60: 45
+   line 67: 52
+   line 71: 62
+   line 72: 70
+   line 74: 84
+   line 75: 94
+   line 76: 106
+   line 78: 117
+   line 79: 164
+
+  LocalVariableTable: 
+   Start  Length  Slot  Name   Signature
+   0      165      0    this       Lcom/spec/sca/benchmark/EncryptVerifierBenchmark;
+   0      165      1    input       Ljava/lang/String;
+   5      160      2    inputBytes       [B
+   13      152      3    keyBytes       [B
+   22      143      4    ivBytes       [B
+   34      131      5    keySpec       Ljavax/crypto/spec/SecretKeySpec;
+   45      120      6    ivSpec       Ljavax/crypto/spec/IvParameterSpec;
+   52      113      7    cipher       Ljavax/crypto/Cipher;
+   70      95      8    chiperTextByte       [B
+   84      81      9    cihperString       Ljava/lang/String;
+   106      59      10    decryptedTextByte       [B
+   117      48      11    decyptedString       Ljava/lang/String;
+
+
+  Exceptions: 
+   throws java.security.NoSuchAlgorithmException, javax.crypto.NoSuchPaddingException, java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException, javax.crypto.IllegalBlockSizeException, javax.crypto.BadPaddingException  Code:
+   Stack=4, Locals=12, Args_size=2
+   0:	aload_1
+   1:	invokevirtual	#52; //Method java/lang/String.getBytes:()[B
+   4:	astore_2
+   5:	aload_0
+   6:	getfield	#17; //Field key:Ljava/lang/String;
+   9:	invokevirtual	#52; //Method java/lang/String.getBytes:()[B
+   12:	astore_3
+   13:	aload_0
+   14:	getfield	#20; //Field iv:Ljava/lang/String;
+   17:	invokevirtual	#52; //Method java/lang/String.getBytes:()[B
+   20:	astore	4
+   22:	new	#58; //class javax/crypto/spec/SecretKeySpec
+   25:	dup
+   26:	aload_3
+   27:	ldc	#60; //String AES
+   29:	invokespecial	#62; //Method javax/crypto/spec/SecretKeySpec."<init>":([BLjava/lang/String;)V
+   32:	astore	5
+   34:	new	#65; //class javax/crypto/spec/IvParameterSpec
+   37:	dup
+   38:	aload	4
+   40:	invokespecial	#67; //Method javax/crypto/spec/IvParameterSpec."<init>":([B)V
+   43:	astore	6
+   45:	ldc	#70; //String AES/CBC/PKCS5Padding
+   47:	invokestatic	#72; //Method javax/crypto/Cipher.getInstance:(Ljava/lang/String;)Ljavax/crypto/Cipher;
+   50:	astore	7
+   52:	aload	7
+   54:	iconst_1
+   55:	aload	5
+   57:	aload	6
+   59:	invokevirtual	#78; //Method javax/crypto/Cipher.init:(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
+   62:	aload	7
+   64:	aload_2
+   65:	invokevirtual	#82; //Method javax/crypto/Cipher.doFinal:([B)[B
+   68:	astore	8
+   70:	new	#53; //class java/lang/String
+   73:	dup
+   74:	aload	8
+   76:	invokestatic	#86; //Method org/apache/commons/codec/binary/Base64.encodeBase64:([B)[B
+   79:	invokespecial	#91; //Method java/lang/String."<init>":([B)V
+   82:	astore	9
+   84:	aload	7
+   86:	iconst_2
+   87:	aload	5
+   89:	aload	6
+   91:	invokevirtual	#78; //Method javax/crypto/Cipher.init:(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
+   94:	aload	7
+   96:	aload	9
+   98:	invokestatic	#92; //Method org/apache/commons/codec/binary/Base64.decodeBase64:(Ljava/lang/String;)[B
+   101:	invokevirtual	#82; //Method javax/crypto/Cipher.doFinal:([B)[B
+   104:	astore	10
+   106:	new	#53; //class java/lang/String
+   109:	dup
+   110:	aload	10
+   112:	invokespecial	#91; //Method java/lang/String."<init>":([B)V
+   115:	astore	11
+   117:	getstatic	#96; //Field java/lang/System.out:Ljava/io/PrintStream;
+   120:	new	#102; //class java/lang/StringBuilder
+   123:	dup
+   124:	ldc	#104; //String cleartext:[
+   126:	invokespecial	#106; //Method java/lang/StringBuilder."<init>":(Ljava/lang/String;)V
+   129:	aload_1
+   130:	invokevirtual	#108; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   133:	ldc	#112; //String ]\tcihperString: [
+   135:	invokevirtual	#108; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   138:	aload	9
+   140:	invokevirtual	#108; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   143:	ldc	#114; //String ]\tdecryptedString: [
+   145:	invokevirtual	#108; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   148:	aload	11
+   150:	invokevirtual	#108; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   153:	ldc	#116; //String ]
+   155:	invokevirtual	#108; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   158:	invokevirtual	#118; //Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+   161:	invokevirtual	#122; //Method java/io/PrintStream.println:(Ljava/lang/String;)V
+   164:	return
+  LineNumberTable: 
+   line 33: 0
+   line 34: 5
+   line 35: 13
+   line 39: 22
+   line 40: 34
+   line 60: 45
+   line 67: 52
+   line 71: 62
+   line 72: 70
+   line 74: 84
+   line 75: 94
+   line 76: 106
+   line 78: 117
+   line 79: 164
+
+  LocalVariableTable: 
+   Start  Length  Slot  Name   Signature
+   0      165      0    this       Lcom/spec/sca/benchmark/EncryptVerifierBenchmark;
+   0      165      1    input       Ljava/lang/String;
+   5      160      2    inputBytes       [B
+   13      152      3    keyBytes       [B
+   22      143      4    ivBytes       [B
+   34      131      5    keySpec       Ljavax/crypto/spec/SecretKeySpec;
+   45      120      6    ivSpec       Ljavax/crypto/spec/IvParameterSpec;
+   52      113      7    cipher       Ljavax/crypto/Cipher;
+   70      95      8    chiperTextByte       [B
+   84      81      9    cihperString       Ljava/lang/String;
+   106      59      10    decryptedTextByte       [B
+   117      48      11    decyptedString       Ljava/lang/String;
+
+
+}
+

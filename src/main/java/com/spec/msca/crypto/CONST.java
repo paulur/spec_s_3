@@ -1,0 +1,33 @@
+package com.spec.msca.crypto;
+
+public interface CONST {
+	//Bug constants
+	String 
+		BUG_CIPHER_INSTANCE	= "NON_STANDARD_CIPHER_INSTANCE",
+		BUG_CIPHER_SUITE 	= "CIPHER_SUITE_BUG",
+		BUG_CIPHER_MODE		= "CIPHER_MODE_BUG",
+		BUG_CIPHER_PADDING	= "CIPHER_PADDING_BUG",
+		BUG_ASYMMETRIC_CIPHER_IN_APP	
+							= "ASYMMETRIC_CIPHER_IN_APP",
+		BUG_HASH_INSTANCE	= "OUTDATED_HASH_INTANCE",
+		BUG_SECURE_RANDOME_INSTANCE
+							= "SECURE_RANDOM_INSTANCE";
+	
+	//Warning constants
+	String 
+		WARNING_CIPHER_DISCOVERED	= "WARNING_CIPHER_DISCOVERED",
+		WARNING_HASH_DISCOVERED		= "WARNING_HASH_DISCOVERED";
+		
+	//Cipher constants
+	String 
+		AES_CIPHER 			= "AES",
+		TRIPLE_DES_CIPHER 	= "DESede",
+		RSA_CIPHER			= "RSA",
+		CBC_MODE			= "CBC",
+		CTR					= "CTR",
+		NO_PADDING_SCHEME	= "NoPadding";	
+	
+	//Hash constants
+	String 
+		HASH_SHA	= "SHA";
+}
