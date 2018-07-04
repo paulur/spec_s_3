@@ -1,0 +1,231 @@
+Scanner processed against directory "C:\Users\pli\git-repo\spec_s_3\src\main\python".
+==Started @:2018-07-03 12:13:44.610000==
+
+--discovered keywords--
+KEYWORD: server.ssl.key-store = classpath:keystore.jks
+	C:\Users\pli\git-repo\customer-service-repo\customer-service-gateway\src\main\resources\application.properties
+KEYWORD: server.ssl.key-store-password = tomcat
+	C:\Users\pli\git-repo\customer-service-repo\customer-service-gateway\src\main\resources\application.properties
+KEYWORD: server.ssl.key-store = classpath:keystore.jks
+	C:\Users\pli\git-repo\customer-service-repo\customer-service-gateway\target\classes\application.properties
+KEYWORD: server.ssl.key-store-password = tomcat
+	C:\Users\pli\git-repo\customer-service-repo\customer-service-gateway\target\classes\application.properties
+KEYWORD: server.ssl.key-store = classpath:keystore.jks
+	C:\Users\pli\git-repo\customer-service-repo\roosevelt-gateway-archetype\src\main\resources\archetype-resources\src\main\resources\application.properties
+KEYWORD: server.ssl.key-store-password = tomcat
+	C:\Users\pli\git-repo\customer-service-repo\roosevelt-gateway-archetype\src\main\resources\archetype-resources\src\main\resources\application.properties
+KEYWORD: server.ssl.key-store = classpath:keystore.jks
+	C:\Users\pli\git-repo\customer-service-repo\roosevelt-gateway-archetype\target\classes\archetype-resources\src\main\resources\application.properties
+KEYWORD: server.ssl.key-store-password = tomcat
+	C:\Users\pli\git-repo\customer-service-repo\roosevelt-gateway-archetype\target\classes\archetype-resources\src\main\resources\application.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-api-gateway\bin\src\main\resources\application-dev.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-api-gateway\bin\src\main\resources\application-prod.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-api-gateway\bin\src\main\resources\application-qa.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-api-gateway\bin\src\test\resources\application-test.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-api-gateway\src\main\resources\application-dev.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-api-gateway\src\main\resources\application-prod.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-api-gateway\src\main\resources\application-qa.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-api-gateway\src\test\resources\application-test.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-api-transforms\bin\src\main\resources\application-dev.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-api-transforms\bin\src\main\resources\application-prod.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-api-transforms\bin\src\main\resources\application-qa.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-api-transforms\src\main\resources\application-dev.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-api-transforms\src\main\resources\application-prod.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-api-transforms\src\main\resources\application-qa.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-rest-services\bin\main\resources\application-dev.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-rest-services\bin\main\resources\application-prod.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-rest-services\bin\main\resources\application-qa.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-rest-services\src\main\resources\application-dev.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-rest-services\src\main\resources\application-prod.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-rest-services\src\main\resources\application-qa.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-rest-services\target\classes\application-dev.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-rest-services\target\classes\application-prod.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\ddot-git-repo\dot-rest-services\target\classes\application-qa.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\dot\dot-gateway\src\main\resources\application-ci.properties
+KEYWORD: javax.net.ssl.keyStorePassword = password
+	C:\Users\pli\git-repo\dot\dot-gateway\src\main\resources\application-ci.properties
+KEYWORD: roosevelt.oidc.config.rsaKeyUrl =  https://vvaultuat:8200/v1/secret/tst/api-transformation/unmanaged/jks_password
+	C:\Users\pli\git-repo\dot\dot-gateway\src\main\resources\application-ci.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\dot\dot-gateway\src\main\resources\application-dev.properties
+KEYWORD: javax.net.ssl.keyStorePassword = password
+	C:\Users\pli\git-repo\dot\dot-gateway\src\main\resources\application-dev.properties
+KEYWORD: roosevelt.oidc.config.rsaKeyUrl =  https://vvaultuat:8200/v1/secret/tst/api-transformation/unmanaged/jks_password
+	C:\Users\pli\git-repo\dot\dot-gateway\src\main\resources\application-dev.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\dot\dot-gateway\src\main\resources\application-local.properties
+KEYWORD: javax.net.ssl.keyStorePassword = password
+	C:\Users\pli\git-repo\dot\dot-gateway\src\main\resources\application-local.properties
+KEYWORD: roosevelt.oidc.config.rsaKeyUrl =  https://vvaultuat:8200/v1/secret/tst/api-transformation/unmanaged/jks_password
+	C:\Users\pli\git-repo\dot\dot-gateway\src\main\resources\application-local.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\dot\dot-gateway\src\main\resources\application-prod.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\dot\dot-gateway\src\main\resources\application-test.properties
+KEYWORD: javax.net.ssl.keyStorePassword = password
+	C:\Users\pli\git-repo\dot\dot-gateway\src\main\resources\application-test.properties
+KEYWORD: roosevelt.oidc.config.rsaKeyUrl =  https://vvaultuat:8200/v1/secret/tst/api-transformation/unmanaged/jks_password
+	C:\Users\pli\git-repo\dot\dot-gateway\src\main\resources\application-test.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\dot\dot-gateway\src\test\resources\application.properties
+KEYWORD: javax.net.ssl.keyStorePassword = password
+	C:\Users\pli\git-repo\dot\dot-gateway\src\test\resources\application.properties
+KEYWORD: roosevelt.oidc.config.rsaKeyUrl =  https://vvaultuat:8200/v1/secret/tst/api-transformation/unmanaged/jks_password
+	C:\Users\pli\git-repo\dot\dot-gateway\src\test\resources\application.properties
+KEYWORD: spring.datasource.password=dot
+	C:\Users\pli\git-repo\dot\dot-gateway\src\test\resources\application.properties
+KEYWORD: #spring.datasource.password=<your tst password>
+	C:\Users\pli\git-repo\dot\dot-gateway\src\test\resources\application.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\dot\dot-gateway\target\classes\application-ci.properties
+KEYWORD: javax.net.ssl.keyStorePassword = password
+	C:\Users\pli\git-repo\dot\dot-gateway\target\classes\application-ci.properties
+KEYWORD: roosevelt.oidc.config.rsaKeyUrl =  https://vvaultuat:8200/v1/secret/tst/api-transformation/unmanaged/jks_password
+	C:\Users\pli\git-repo\dot\dot-gateway\target\classes\application-ci.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\dot\dot-gateway\target\classes\application-dev.properties
+KEYWORD: javax.net.ssl.keyStorePassword = password
+	C:\Users\pli\git-repo\dot\dot-gateway\target\classes\application-dev.properties
+KEYWORD: roosevelt.oidc.config.rsaKeyUrl =  https://vvaultuat:8200/v1/secret/tst/api-transformation/unmanaged/jks_password
+	C:\Users\pli\git-repo\dot\dot-gateway\target\classes\application-dev.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\dot\dot-gateway\target\classes\application-local.properties
+KEYWORD: javax.net.ssl.keyStorePassword = password
+	C:\Users\pli\git-repo\dot\dot-gateway\target\classes\application-local.properties
+KEYWORD: roosevelt.oidc.config.rsaKeyUrl =  https://vvaultuat:8200/v1/secret/tst/api-transformation/unmanaged/jks_password
+	C:\Users\pli\git-repo\dot\dot-gateway\target\classes\application-local.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\dot\dot-gateway\target\classes\application-prod.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\dot\dot-gateway\target\classes\application-test.properties
+KEYWORD: javax.net.ssl.keyStorePassword = password
+	C:\Users\pli\git-repo\dot\dot-gateway\target\classes\application-test.properties
+KEYWORD: roosevelt.oidc.config.rsaKeyUrl =  https://vvaultuat:8200/v1/secret/tst/api-transformation/unmanaged/jks_password
+	C:\Users\pli\git-repo\dot\dot-gateway\target\classes\application-test.properties
+KEYWORD: server.ssl.key-store-password = password
+	C:\Users\pli\git-repo\dot\dot-gateway\target\test-classes\application.properties
+KEYWORD: javax.net.ssl.keyStorePassword = password
+	C:\Users\pli\git-repo\dot\dot-gateway\target\test-classes\application.properties
+KEYWORD: roosevelt.oidc.config.rsaKeyUrl =  https://vvaultuat:8200/v1/secret/tst/api-transformation/unmanaged/jks_password
+	C:\Users\pli\git-repo\dot\dot-gateway\target\test-classes\application.properties
+KEYWORD: spring.datasource.password=dot
+	C:\Users\pli\git-repo\dot\dot-gateway\target\test-classes\application.properties
+KEYWORD: #spring.datasource.password=<your tst password>
+	C:\Users\pli\git-repo\dot\dot-gateway\target\test-classes\application.properties
+KEYWORD: server.ssl.key-store: keystore.p12
+	C:\Users\pli\git-repo\oidc\oidc-api_gateway\src\main\resources\application-dev.properties
+KEYWORD: #security.user.password=race@2007
+	C:\Users\pli\git-repo\oidc\oidc-api_gateway\src\main\resources\application-dev.properties
+KEYWORD: server.ssl.key-store-password: tomcat
+	C:\Users\pli\git-repo\oidc\oidc-api_gateway\src\main\resources\application-dev.properties
+KEYWORD: roosevelt.oidc.config.rsaKeyUrl =  https://vvaultuat:8200/v1/secret/tst/api-transformation/unmanaged/jks_password
+	C:\Users\pli\git-repo\oidc\oidc-api_gateway\src\main\resources\application-dev.properties
+KEYWORD: server.ssl.key-store: keystore.p12
+	C:\Users\pli\git-repo\oidc\oidc-api_gateway\src\main\resources\application-local.properties
+KEYWORD: server.ssl.key-store-password: tomcat
+	C:\Users\pli\git-repo\oidc\oidc-api_gateway\src\main\resources\application-local.properties
+KEYWORD: roosevelt.oidc.config.rsaKeyUrl =  https://vvaultuat:8200/v1/secret/tst/api-transformation/unmanaged/jks_password
+	C:\Users\pli\git-repo\oidc\oidc-api_gateway\src\main\resources\application-local.properties
+KEYWORD: #security.user.password=race@2007
+	C:\Users\pli\git-repo\oidc\oidc-api_gateway\src\main\resources\application.properties
+KEYWORD: #artifactory_password=hashed artifactory key
+	C:\Users\pli\git-repo\oidc\oidc-library-gradle\gradle.properties
+KEYWORD: #server.ssl.key-store: keystore.p12
+	C:\Users\pli\git-repo\oidc\oidc_transformation\src\main\resources\application-dev.properties
+KEYWORD: #server.ssl.key-store-password: tomcat
+	C:\Users\pli\git-repo\oidc\oidc_transformation\src\main\resources\application-dev.properties
+KEYWORD: roosevelt.oidc.config.rsaKeyUrl =  https://vvaultuat:8200/v1/secret/tst/api-transformation/unmanaged/jks_password
+	C:\Users\pli\git-repo\oidc\oidc_transformation\src\main\resources\application-dev.properties
+KEYWORD: #server.ssl.key-store: keystore.p12
+	C:\Users\pli\git-repo\oidc\oidc_transformation\src\main\resources\application-local.properties
+KEYWORD: #server.ssl.key-store-password: tomcat
+	C:\Users\pli\git-repo\oidc\oidc_transformation\src\main\resources\application-local.properties
+KEYWORD: roosevelt.oidc.config.rsaKeyUrl =  https://vvaultuat:8200/v1/secret/tst/api-transformation/unmanaged/jks_password
+	C:\Users\pli\git-repo\oidc\oidc_transformation\src\main\resources\application-local.properties
+KEYWORD: #security.user.password=race@2007
+	C:\Users\pli\git-repo\oidc\oidc_transformation\src\main\resources\donotuseapplication.properties
+KEYWORD: #server.ssl.key-store: keystore.p12
+	C:\Users\pli\git-repo\oidc\oidc_transformation\target\classes\application-dev.properties
+KEYWORD: #server.ssl.key-store-password: tomcat
+	C:\Users\pli\git-repo\oidc\oidc_transformation\target\classes\application-dev.properties
+KEYWORD: roosevelt.oidc.config.rsaKeyUrl =  https://vvaultuat:8200/v1/secret/tst/api-transformation/unmanaged/jks_password
+	C:\Users\pli\git-repo\oidc\oidc_transformation\target\classes\application-dev.properties
+KEYWORD: #server.ssl.key-store: keystore.p12
+	C:\Users\pli\git-repo\oidc\oidc_transformation\target\classes\application-local.properties
+KEYWORD: #server.ssl.key-store-password: tomcat
+	C:\Users\pli\git-repo\oidc\oidc_transformation\target\classes\application-local.properties
+KEYWORD: roosevelt.oidc.config.rsaKeyUrl =  https://vvaultuat:8200/v1/secret/tst/api-transformation/unmanaged/jks_password
+	C:\Users\pli\git-repo\oidc\oidc_transformation\target\classes\application-local.properties
+KEYWORD: #security.user.password=race@2007
+	C:\Users\pli\git-repo\oidc\oidc_transformation\target\classes\donotuseapplication.properties
+KEYWORD: # Default password for User so that spring security should not generate new password again.
+	C:\Users\pli\git-repo\oidc\oidc_transformation\target\OIDC-API_transformation-0.0.1-SNAPSHOT\WEB-INF\classes\application.properties
+KEYWORD: security.user.password=race@2007
+	C:\Users\pli\git-repo\oidc\oidc_transformation\target\OIDC-API_transformation-0.0.1-SNAPSHOT\WEB-INF\classes\application.properties
+KEYWORD: artifactory_password=enter your password
+	C:\Users\pli\git-repo\oidc\vault\gradle.properties
+KEYWORD: server.ssl.key-store = classpath:keystore.jks
+	C:\Users\pli\git-repo\shopping-repo\ddpa-provider-service\src\main\resources\application.properties
+KEYWORD: server.ssl.key-store-password = tomcat
+	C:\Users\pli\git-repo\shopping-repo\ddpa-provider-service\src\main\resources\application.properties
+KEYWORD: server.ssl.key-store = classpath:keystore.jks
+	C:\Users\pli\git-repo\shopping-repo\ddpa-provider-service\target\classes\application.properties
+KEYWORD: server.ssl.key-store-password = tomcat
+	C:\Users\pli\git-repo\shopping-repo\ddpa-provider-service\target\classes\application.properties
+KEYWORD: magnolia.connection.jcr.password = admin
+	C:\Users\pli\git-repo\shopping-repo\shopping-cms\shopping-cms-webapp\src\main\webapp\WEB-INF\config\cmomactmgrv7301\magnolia.properties
+KEYWORD: magnolia.connection.jcr.password = admin
+	C:\Users\pli\git-repo\shopping-repo\shopping-cms\shopping-cms-webapp\src\main\webapp\WEB-INF\config\cmomactmgrv7302\magnolia.properties
+KEYWORD: magnolia.connection.jcr.password = admin
+	C:\Users\pli\git-repo\shopping-repo\shopping-cms\shopping-cms-webapp\src\main\webapp\WEB-INF\config\cmomactmgrv7303\magnolia.properties
+KEYWORD: magnolia.connection.jcr.password = admin
+	C:\Users\pli\git-repo\shopping-repo\shopping-cms\shopping-cms-webapp\src\main\webapp\WEB-INF\config\cmomactmgrv7304\magnolia.properties
+KEYWORD: magnolia.connection.jcr.password = admin
+	C:\Users\pli\git-repo\shopping-repo\shopping-cms\shopping-cms-webapp\src\main\webapp\WEB-INF\config\cmomactmgrv7305\magnolia.properties
+KEYWORD: # keytool -import -file server_cert.cer -keystore jssecacerts
+	C:\Users\pli\git-repo\shopping-repo\shopping-cms\shopping-cms-webapp\src\main\webapp\WEB-INF\config\default\ad.properties
+KEYWORD: magnolia.connection.jcr.password = admin
+	C:\Users\pli\git-repo\shopping-repo\shopping-cms\shopping-cms-webapp\src\main\webapp\WEB-INF\config\default\magnolia.properties
+KEYWORD: server.ssl.key-store=classpath:keystore.jks
+	C:\Users\pli\git-repo\shopping-repo\turnkey-gateway\src\main\resources\application-local.properties
+KEYWORD: server.ssl.key-store-password=tomcat
+	C:\Users\pli\git-repo\shopping-repo\turnkey-gateway\src\main\resources\application-local.properties
+KEYWORD: server.ssl.key-store=classpath:keystore.jks
+	C:\Users\pli\git-repo\shopping-repo\turnkey-gateway\src\main\resources\application.properties
+KEYWORD: server.ssl.key-store-password=tomcat
+	C:\Users\pli\git-repo\shopping-repo\turnkey-gateway\src\main\resources\application.properties
+KEYWORD: server.ssl.key-store=classpath:keystore.jks
+	C:\Users\pli\git-repo\shopping-repo\turnkey-gateway\target\classes\application-local.properties
+KEYWORD: server.ssl.key-store-password=tomcat
+	C:\Users\pli\git-repo\shopping-repo\turnkey-gateway\target\classes\application-local.properties
+KEYWORD: server.ssl.key-store=classpath:keystore.jks
+	C:\Users\pli\git-repo\shopping-repo\turnkey-gateway\target\classes\application.properties
+KEYWORD: server.ssl.key-store-password=tomcat
+	C:\Users\pli\git-repo\shopping-repo\turnkey-gateway\target\classes\application.properties
+==Scanning Result==
+Completed @:2018-07-03 12:13:47.675000
+112 keywords and 32 files are discovered.
