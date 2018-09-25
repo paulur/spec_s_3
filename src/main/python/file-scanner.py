@@ -6,7 +6,7 @@
 import os, sys, datetime
 
 FileTypes = ['properties']
-SearchStrings = ['keystore', 'password']
+SearchStrings = ['keystore', 'password', 'credential', 'secret']
 KeyFileTypes = ['.p12', '.jks']
 LogFileName = "Scan_LOG.txt"
 EventTypes = {
